@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Евгений Дюбанов](https://up.htmlacademy.ru/htmlcss/25/user/793367).
-* Наставник: [Сергей Попенко](https://htmlacademy.ru/profile/id66243).
+* Наставник: [Сергей Попенко](https://up.htmlacademy.ru/htmlcss/25/user/66243).
 
 ---
 
