@@ -3,17 +3,17 @@
    <head>
       <meta charset="utf-8">
       <title>HTML Academy: Седона</title>
-      <link rel="stylesheet" type="text/css" href="css/index.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
    </head>
    <body>
       <header>
-         <p class="logo">
-            <img src="img/logo.svg" alt="logo" width="140" height="71">
-         </p>
          <nav class='main-navigation'>
+            <p class="logo">
+            <img src="img/indexlogo.svg" alt="logo" width="140" height="72">
+         </p>
             <ul>
                <li class="button-navigation">
-                  <a href='#'>Информация</a></a>
+                  <a href='#'>Информация</a>
                </li>
                <li class="button-navigation">
                   <a href='#'>Фото и видео</a>
@@ -28,11 +28,11 @@
          </nav>
       </header>
       <main>
-         <section class="bg-mountains">
+         <section class="bgmountains">
             <img src="img/welcome.svg" alt="welcome sedona" width="459" height="353">
          </section>
          <section class="promo">
-            <p class="promo-explanation">Седона - недольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="promo-explanation">Седона - недольшой городок в Аризоне,<br> заслуживающий большего!</p>
             <p class="promo-reasons">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
          </section>
          <section>
@@ -45,24 +45,24 @@
                         <p>Седона - не оттракцион для туристов, там течёт твоя жизнь</p>
                      </li>
                      <li class="img-dvantages">
-                        <img src="#" alt="city of sedona">
+                        <img src="img/cityofsedona.jpg" alt="city of sedona">
                      </li>
                   </ul>
                </li>
                <li class="town-advantages">
                   <ul>
                      <li class="unvisible-advantages">
-                        <p></p>
+                        <p><img src="img/icon-1.png"></p>
                         <h3>Жильё</h3>
                         <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                      </li>
                      <li class="unvisible-advantages">
-                        <p></p>
+                        <p><img src="img/icon-2.png"></p>
                         <h3>Еда</h3>
                         <p>Всегда заказывайте фирменный бургер, вы не разачаруетесь!</p>
                      </li>
                      <li class="unvisible-advantages">
-                        <p></p>
+                        <p><img src="img/icon-3.png"></p>
                         <h3>Сувениры</h3>
                         <p>Не только китайского, но и местного производства!</p>
                      </li>
@@ -71,7 +71,7 @@
                <li class="main-advantages">
                   <ul>
                      <li class="img-advantages">
-                        <p><img src="#" alt="grand canyon"></p>
+                        <p><img src="img/grandcanyon.jpg" alt="grand canyon"></p>
                      </li>
                      <li class="basic visible-advantages">
                         <h3>Там есть Мост Дьявола</h3>
@@ -111,11 +111,36 @@
                <br>и мы покажем Вам лучшие предложения гостиниц в Седоне
             </p>
             <p class="search-button">
-               <a href="#">Поиск госстиницы в седоне</a>
+               <a href="#">Поиск госстиницы в седоне</a> <!-- По идее, это кнопка, которая активирует появление формы, но знаний не хватает, что бы понять как это сделать -->
             </p>
+            <form class="hotel-reservation" action="/echo" method="get">
+               <div class="filling-form">
+                  <label class="travel-date">
+                     Дата заезда:
+                     <input class="enter-date-of-traveling" type="text" name="arrival" value="24 апреля 2017">
+                     <button class="calendar" type="button"><img src="img/calendar.png" alt="Календарь" width="21" height="22"></button>
+                  </label>
+                  <label class="travel-date">
+                     Дата выезда:
+                     <input class="enter-date-of-traveling" type="text" name="departure" value="4 июля 2017">
+                     <button class="calendar" type="button"><img src="img/calendar.png" alt="Календарь" width="21" height="22"></button>
+                  </label>
+                  <div class="people"> 
+                  <label class="number-of-travelers">
+                      Взрослые:
+                     <input class="enter-the-number-of-travelers" type="number" name="adults" value="2" min="0">
+                  </label>
+                  <label class="number-of-travelers">
+                     Дети:
+                     <input class="enter-the-number-of-travelers" type="number" name="children" value="0" min="0">
+                 </label>
+                  </div>
+               </div>
+               <button class="submit" type="submit">Найти</button>
+            </form>
          </section>
          <section class="map-of-sedona">
-            <p><img src="img/maps.jpg" alt="карта седоны"></p>
+            <p><img src="img/map.jpg" alt="карта седоны"></p>
          </section>
       </main>
       <footer>
@@ -123,9 +148,9 @@
             #VISITSEDONA
          </p>
          <ul class="social-network">
-            <li class="btn-network btn-tw"><a href="#">Twitter</a></li>
-            <li class="btn-network btn-fc"><a href="#">Facebook</a></li>
-            <li class="btn-network btn-vk"><a href="#">VK</a></li>
+            <li class="btn-network btn-tw"><a href="#"><img src="img/twitter.png" alt="twitter of sedona"></a></li>
+            <li class="btn-network btn-fc"><a href="#"><img src="img/facebook.png" alt="facebook of sedona"></a></li>
+            <li class="btn-network btn-yt"><a href="#"><img src="img/youtube.png" alt="youtube of sedona"></a></li>
          </ul>
          <div class="creator">
             <span class="creator-text">
@@ -133,7 +158,7 @@
             </span>
             <p class="creator-logo">
                <a href="https://htmlacademy.ru">
-               <img src="logoHTMLAcademy.png" alt="htmlacademy">
+               <img src="img/logoacademy.png" alt="htmlacademy">
                </a>
             </p>
          </div>

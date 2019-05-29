@@ -1,0 +1,33 @@
+body{
+	font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    display: block;
+    width: 1280px;
+    margin: 0;
+}
+header{
+
+}
+nav {
+	width: 100%;
+}
+li {
+    list-style-type: none;
+}
+ul li {
+	display: inline;
+}
+.button-navigation {
+	width: 1200px;
+	height: 56px;
+	padding: 18px 70px;
+}
+.main-navigation {
+
+}
+.bgmountains {
+	background-image: url(../img/bgmountain.png);
+	background-repeat: no-repeat;
+}
