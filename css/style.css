@@ -1,33 +1,152 @@
-body{
+body {
+	margin: 0;
+	padding: 0;
+
 	font-family: "PT Sans", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    display: block;
-    width: 1280px;
-    margin: 0;
-}
-header{
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #333333;
+	text-transform: uppercase;
 
+	background-color: #ffffff;
+	background-position: center;
 }
-nav {
-	width: 100%;
+
+a {
+	text-decoration: none;
 }
-li {
-    list-style-type: none;
-}
-ul li {
-	display: inline;
-}
-.button-navigation {
-	width: 1200px;
-	height: 56px;
-	padding: 18px 70px;
-}
+
 .main-navigation {
+	font-weight: 700;
+}
+
+.navigation {
+	list-style: none;
+}
+
+.button-navigation a {
+	color: #333333;
+}
+
+.promo-explanation {
+	font-size: 21px;
+	text-align: center;
+	color: #000000;
+	font-weight: 700;
+}
+
+.promo-reasons {
+	text-align: center;
+}
+
+.advantages {
+	list-style: none;
+}
+
+.list-advantages {
+	list-style: none;
+}
+
+.basic.visible-advantages {
+	text-align: center;
+	color: #ffffff;
+
+	background-color: #81b3d2;
+}
+
+.basic.visible-advantages h3 {
+	font-size: 21px;
+	font-weight: 700;
+}
+
+.img-advantages {
+	text-align: center;
+}
+
+.unvisible-advantages {
+	text-align: center;
+}
+
+.unvisible-advantages h3 {
+	font-size: 21px;
+	font-weight: 700;
+}
+
+.visible-advantages {
+	text-align: center;
+
+	background-color: #eeeeee;
+}
+
+.visible-advantages h3 {
+	font-size: 21px;
+	font-weight: 700;
+}
+
+.reservation {
+	color: #000000;
+	text-align: center;
+}
+
+.reservation .half-headline {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 700;
+}
+
+.search-button {
+	background-color: #766357;
+}
+
+.search-button a{
+	color: #ffffff;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+}
+
+.filling-form {
+	color: #000000;
+	text-align: left;
+	font-weight: 700;
+}
+.number {
+	text-align: center;
+}
+
+.submit {
+	text-align: center;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 26px;
+
+	background-color: #81b3d2;
+}
+
+.map-of-sedona {
+	text-align: center;
+}
+
+.hashtag {
+	color: #000000;
+	text-align: center;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
 
 }
-.bgmountains {
-	background-image: url(../img/bgmountain.png);
-	background-repeat: no-repeat;
+
+.social-network {
+	list-style: none;
 }
+.btn-network {
+	text-align: center;
+
+	background-color: #81b3d2;
+}
+
+.creator {
+	color: #000000;
+}S
