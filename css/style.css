@@ -4,7 +4,7 @@ body {
 
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
-	line-height: 26px;
+	line-height: 21px;
 	font-weight: 400;
 	color: #333333;
 	text-transform: uppercase;
@@ -19,18 +19,53 @@ a {
 
 .main-navigation {
 	font-weight: 700;
+	display: block;
 }
 
 .navigation {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 72px;
+	margin: 0;
+
 	list-style: none;
 }
 
-.button-navigation a {
+.button-navigation {
 	color: #333333;
+	line-height: 26px;
+
+	width: 238px;
+    padding-top: 17px;
+    padding-bottom: 18px;
+    font-weight: 700;
+}
+
+.button-navagation:nth-child(4n+2) {
+    margin-right: 96px;
+}
+
+.button-navagation:nth-child(4n+3),
+.button-navagation:nth-child(4n+4) {
+    text-align: right;
+}
+
+.logo {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 50%;
+}
+
+.bgmountains {
+	background-color: #b8eafc;
+	background-image: url(../img/bgmountain.png);
+	background-repeat: no-repeat;
 }
 
 .promo-explanation {
 	font-size: 21px;
+	line-height: 36px;
 	text-align: center;
 	color: #000000;
 	font-weight: 700;
@@ -38,6 +73,7 @@ a {
 
 .promo-reasons {
 	text-align: center;
+	line-height: 36px;
 }
 
 .advantages {
@@ -66,6 +102,7 @@ a {
 
 .unvisible-advantages {
 	text-align: center;
+	font-size: 14px;
 }
 
 .unvisible-advantages h3 {
@@ -73,10 +110,13 @@ a {
 	font-weight: 700;
 }
 
+.list-advantages {
+	background-color: #eeeeee;
+}
+
 .visible-advantages {
 	text-align: center;
-
-	background-color: #eeeeee;
+	font-size: 14px;	
 }
 
 .visible-advantages h3 {
@@ -87,12 +127,18 @@ a {
 .reservation {
 	color: #000000;
 	text-align: center;
+	background-color: #f2f2f2;
 }
 
-.reservation .half-headline {
+.half-headline {
 	font-size: 30px;
 	line-height: 36px;
 	font-weight: 700;
+}
+.reservation-info {
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
 }
 
 .search-button {
@@ -149,4 +195,75 @@ a {
 
 .creator {
 	color: #000000;
-}S
+}
+
+.inner-background {
+	display: block;
+	background-color: #b8eafc;
+	background-image: url(../img/filter-background.png);
+	background-repeat: no-repeat;
+}
+
+.conditions-type,
+.choice-of-cost {
+	text-align: left;
+	font-size: 16px;
+	font-weight: 700;
+	color: #ffffff;
+
+}
+
+.conditions {
+	text-align: left;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.name-conditions {
+	text-align: left;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.sorting h2 {
+	font-weight: 700;
+	line-height: 26px;
+	font-size: 21px;
+	text-align: left;
+	color: #000000;
+}
+.sorting p {
+	color: #000000;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: left;
+}
+.sorting-list {
+	color: rgba(0, 0, 0, 0.3);
+	text-align: left;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.sorting-list:hover {
+	color: #81b3d2;
+	border-bottom: 1px dashed #81b3d2;
+}
+
+.sorting-list:active {
+	color: #000000;
+	border-bottom: 0px dashed #81b3d2;
+}
+
+.name-of-house {
+	color: #000000;
+	line-height: 26px;
+	font-size: 21px;
+	font-weight: 700;
+	text-align: left;
+}
+
+.type-of-house,
+.cost-of-rent {
+	text-align: left;
+}

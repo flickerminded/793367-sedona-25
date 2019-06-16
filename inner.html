@@ -9,59 +9,76 @@
    <link rel="stylesheet" type="text/css" href="css/style.css"> </head>
 
 <body>
-   <header>
-      <nav class='main-navigation'>
-         <p class="logo"> <img src="img/indexlogo.svg" alt="logo" width="140" height="72"> </p>
-         <ul>
-            <li class="button-navigation"> <a href='#'>Информация</a> </li>
-            <li class="button-navigation"> <a href='#'>Фото и видео</a> </li>
-            <li class="button-navigation"> <a href='#'>Карта штата</a> </li>
-            <li class="button-navigation"> <a href='inner.html'>Гостиницы</a> </li>
+   <header class="header">
+      <nav class="main-navigation">
+         <p class="logo">
+            <a href="index.html">
+            <img src="img/indexlogo.svg" alt="logo" width="140" height="72"> 
+            </a> 
+         </p>
+         <ul class="navigation">
+            <li class="button-navigation"> 
+               <a href='#'>Информация</a> 
+            </li>
+            <li class="button-navigation"> 
+               <a href='#'>Фото и видео</a> 
+            </li>
+            <li class="button-navigation"> 
+               <a href='#'>Карта штата</a> 
+            </li>
+            <li class="button-navigation"> 
+               <a href='inner.html'>Гостиницы</a> 
+            </li>
          </ul>
       </nav>
    </header>
    <main>
-      <section>
-         <section>
-            <h3 class="conditions">Инфраструктура:</h3>
-            <label class="name-conditions" for="pool">Бассейн</label>
-            <input class="check-conditions" type="checkbox" name="pool" id="pool" checked>
-            <label class="name-conditions" for="parking">Парковка</label>
-            <input class="check-conditions" type="checkbox" name="parking" id="parking">
-            <label class="name-conditions" for="wifi">Wi-Fi</label>
-            <input class="check-conditions" type="checkbox" name="wifi" id="wifi"> </section>
-         <section>
-            <h3 class="conditions">Тип жилья:</h3>
-            <label class="name-conditions" for="hotel">Гостиница</label>
-            <input class="check-conditions" type="checkbox" name="hotel" id="hotel" checked>
-            <label class="name-conditions" for="motel">Мотель</label>
-            <input class="check-conditions" type="checkbox" name="motel" id="motel" checked>
-            <label class="name-conditions" for="apartments">Апартаменты</label>
-            <input class="check-conditions" type="checkbox" name="apartments" id="apartments" checked> </section>
-         <section>
-            <h3>Стоимость в сутки (Р):</h3>
+      <section class="inner-background">
+         <fieldset class="form-conditions">
+            <legend class="conditions-type">Инфраструктура:</legend>
+            <form class="conditions">
+               <label class="name-conditions" for="pool">Бассейн</label>
+               <input class="check-conditions" type="checkbox" name="pool" id="pool" checked>
+               <label class="name-conditions" for="parking">Парковка</label>
+               <input class="check-conditions" type="checkbox" name="parking" id="parking">
+               <label class="name-conditions" for="wifi">Wi-Fi</label>
+               <input class="check-conditions" type="checkbox" name="wifi" id="wifi">
+            </form>
+         </fieldset>
+         <fieldset class="form-conditions">
+            <legend class="conditions-type">Тип жилья:</legend>
+            <form class="conditions">
+               <label class="name-conditions" for="hotel">Гостиница</label>
+               <input class="check-conditions" type="checkbox" name="hotel" id="hotel" checked>
+               <label class="name-conditions" for="motel">Мотель</label>
+               <input class="check-conditions" type="checkbox" name="motel" id="motel" checked>
+               <label class="name-conditions" for="apartments">Апартаменты</label>
+               <input class="check-conditions" type="checkbox" name="apartments" id="apartments" checked> 
+            </form>
+         </fieldset>
+         <fieldset class="choice-of-cost">
+            <legend>Стоимость в сутки (Р):</legend>
             <!-- тут будет форма -->
-         </section>
+         </fieldset>
       </section>
       <section>
-         <div>
+         <div class="sorting">
             <h2>Найдено: 3</h2>
-            <!-- Пока так -->
             <p>Сортировка:</p>
             <ul>
-               <li>По цене</li>
-               <li>По типу</li>
-               <li>По рейтингу</li>
+               <li class="sorting-list" checked>По цене</li>
+               <li class="sorting-list">По типу</li>
+               <li class="sorting-list">По рейтингу</li>
             </ul>
          </div>
-         <div>
+         <div class="hotels">
             <ul>
                <li class="housing-information">
                   <p><img src="img/amara.jpg"></p>
-                  <p>Amara Resort & Spa</p>
+                  <p class="name-of-house">Amara Resort & Spa</p>
                   <div class="type-cost-housing">
-                     <p>Гостиница</p>
-                     <p>от 4000р.</p>
+                     <p class="type-of-house">Гостиница</p>
+                     <p class="cost-of-rent">от 4000р.</p>
                   </div>
                   <div>
                      <p class="more"><a href="#" alt="more">Подробнее</a></p>
@@ -74,10 +91,10 @@
                </li>
                <li class="housing-information">
                   <p><img src="img/desert.jpg"></p>
-                  <p>Desert Quail Inn</p>
+                  <p class="name-of-house">Desert Quail Inn</p>
                   <div class="type-cost-housing">
-                     <p>Мотель</p>
-                     <p>от 3000р.</p>
+                     <p class="type-of-house">Мотель</p>
+                     <p class="cost-of-rent">от 3000р.</p>
                   </div>
                   <div>
                      <p class="more"><a href="#" alt="more">Подробнее</a></p>
@@ -89,15 +106,21 @@
                   </div>
                </li>
                <li class="housing-information">
-                  <p><img src="img/pocodiablo.jpg"></p>
-                  <p>Villas at Poco Diablo</p>
+                  <p>
+                     <img src="img/pocodiablo.jpg">
+                  </p>
+                  <p class="name-of-house">Villas at Poco Diablo</p>
                   <div class="type-cost-housing">
-                     <p>Апартаменты</p>
-                     <p>от 2000р.</p>
+                     <p class="type-of-house">Апартаменты</p>
+                     <p class="cost-of-rent">от 2000р.</p>
                   </div>
                   <div>
-                     <p class="more"><a href="#" alt="more">Подробнее</a></p>
-                     <p class="booking"><a href="#" alt="reservation">Забронировать</a></p>
+                     <p class="more">
+                        <a href="#" alt="more">Подробнее</a>
+                     </p>
+                     <p class="booking">
+                        <a href="#" alt="reservation">Забронировать</a>
+                     </p>
                   </div>
                   <div>
                      <p class="star"><img src=""></p>
