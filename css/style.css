@@ -38,10 +38,12 @@ a {
 
 .header {
 	position: relative;
+	max-height: 56px;
 }
 
 .main-navigation {
 	background-color: #ffffff;
+	position: relative;
 }
 
 .navigation {
@@ -64,29 +66,29 @@ a {
     font-weight: 700;
 }
 
-.button-navagation:nth-child(4n+2) {
+.button-navigation:nth-child(4n+2) {
     margin-right: 96px;
 }
 
-.button-navagation:nth-child(4n+3),
-.button-navagation:nth-child(4n+4) {
+.button-navigation:nth-child(4n+3),
+.button-navigation:nth-child(4n+4) {
     text-align: right;
 }
 
-.button-navagation a {
+.button-navigation a {
 	color: #000000;
 }
 
-.button-navagation:active {
+.button-navigation:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.button-navagation:hover,
-.button-navagation:focus {
+.button-navigation:hover,
+.button-navigation:focus {
   color: #81B3D2;
 }
 
-.button-navagation:not([href]) {
+.button-navigation:not([href]) {
   color: #765957;
 }
 
