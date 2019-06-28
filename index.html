@@ -61,24 +61,24 @@
                      <div class="basic visible-advantages">
                         <h3>Там есть Мост Дьявола</h3>
                         <p>-№2-</p>
-                        <p>Все достопримечательности находятся очень близко</p>
+                        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                      </div>
                   </li>
                   <li class="main-advantages">
                      <div class="visible-advantages">
                         <h3>Небольшая площадь</h3>
                         <p>-№3-</p>
-                        <p>Все достопримечательности находятся очень близко</p>
+                        <p>Все достопримечательности находятся&nbsp;очень близко</p>
                      </div>
                      <div class="visible-advantages">
                         <h3>Красивая дорога</h3>
                         <p>-№4-</p>
-                        <p>Ехать в Седуно из Лас-Вегаса совсем не скучно! </p>
+                        <p>Ехать в Седуно из Лас-Вегаса совсем не&nbsp;скучно! </p>
                      </div>
                      <div class="visible-advantages">
                         <h3>Мало туристов</h3>
                         <p>-№5-</p>
-                        <p>Большинство едет в Гранд Каньон и толпится там</p>
+                        <p>Большинство едет в Гранд Каньон и&nbsp;толпится там</p>
                      </div>
                   </li>
                </ul>
@@ -91,7 +91,6 @@
                   <button class="search-button">Поиск госстиницы в седоне</button>
                </div>
                <form class="hotel-reservation" action="/echo" method="get">
-                  <div class="filling-form">
                      <p class="travel-date">
                         <label class="text" for="arrival">Дата заезда:</label>
                         <input class="put" type="text" id="arrival" name="arrival" value="24 апреля 2017">
@@ -102,28 +101,33 @@
                         <input class="put" type="text" id="departure" name="departure" value="4 июля 2017">
                         <button class="calendar" type="button"> <img src="img/calendar.png" alt="Календарь" width="21" height="22"> </button>
                      </p>
-                     <p class="people">
-                        <label class="text" for="adults">Взрослые:</label>
-                        <button class="plus" type="button"></button>
-                        <input class="number" type="text" id="adults" name="adults" value="2">
-                        <button class="minus" type="button"></button>
-                     </p>
-                     <p class="people">
-                        <label class="text" for="children">Дети:</label>
-                        <button class="plus" type="button"></button>
-                        <input class="number" type="text" id="children" name="children" value="0">
-                        <button class="minus" type="button"></button>
-                     </p>
-                  </div>
+                     <div class="number-people">
+                       <p class="people-adult">
+                          <label class="text" for="adults">Взрослые:</label>
+                          <button class="minus" type="button"></button>
+                          <input class="number" type="text" id="adults" name="adults" value="2">
+                          <button class="plus" type="button"></button>
+                       </p>
+                       <p class="people-children">
+                          <label class="text" for="children">Дети:</label>
+                          <button class="minus" type="button"></button>
+                          <input class="number" type="text" id="children" name="children" value="0">
+                          <button class="plus" type="button"></button>
+                       </p>
+                     </div>
                   <button class="submit" type="submit">Найти</button>
                </form>
             </section>
+            <!--
+                     400 400 400
+(h3 - mrbt 24px
+padding top160 bottom83) -->
             <section class="map-of-sedona">
                <p><img src="img/map.jpg" alt="карта седоны"></p>
             </section>
          </main>
          <footer class="main-footer">
-            <a class="hashtag"> #VISITSEDONA </a>
+            <p class="hashtag"><a href="#"> #VISITSEDONA </a></p>
             <ul class="social-network">
                <li class="btn-network btn-tw">
                   <a href="#"><img src="img/twitter.png" alt="twitter of sedona"></a>
