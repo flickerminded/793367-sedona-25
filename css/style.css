@@ -536,23 +536,17 @@ input[type="radio"].visually-hidden {
 }
 
 .minus:hover::before {
-  background-color: #000000;
+    background-color: #000000;
 }
 
 .minus:active::before {
-  background-color: #81b3d2;
+    background-color: #81b3d2;
 }
 
 
-.map-of-sedona {
-	text-align: center;
-	margin-bottom: 0;
-}
-
-.map-of-sedona p {
-	margin: 0;
-	padding: 0;
-	line-height: 0;
+.reservation iframe {
+	width: 1200;
+	height: 473;
 }
 
 .main-footer {
@@ -646,7 +640,6 @@ input[type="radio"].visually-hidden {
 	padding: 15px 0;
 	padding-right: 8px;
 }
-
 
 
 
