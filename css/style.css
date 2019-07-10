@@ -182,11 +182,10 @@ input[type="radio"].visually-hidden {
 
 .visible-advantages h3 {
 	font-size: 21px;
-	line-height: 26px;
 	font-weight: 700;
 	padding-bottom: 24px;
-	padding-left: 80px;
-	padding-right: 80px;
+	padding-left: 72px;
+	padding-right: 72px;
 	margin: 0;
 }
 
@@ -225,6 +224,7 @@ input[type="radio"].visually-hidden {
 	text-align: center;
 	font-size: 21px;
 	font-weight: 700;
+	margin-top: 0;
 }
 
 .unvisible-advantages p {
