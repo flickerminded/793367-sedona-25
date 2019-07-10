@@ -543,10 +543,9 @@ input[type="radio"].visually-hidden {
     background-color: #81b3d2;
 }
 
-
 .reservation iframe {
-	width: 1200;
-	height: 473;
+	width: 1200px;
+	height: 473px;
 }
 
 .main-footer {
