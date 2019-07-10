@@ -324,7 +324,7 @@ input[type="radio"].visually-hidden {
 	background-color: #fff;
 	position: absolute;
 	left: 50%;
-	transform: translateX(-50%);
+	margin-left: -284px;
 }
 
 .hotel-reservation-none {
@@ -332,8 +332,8 @@ input[type="radio"].visually-hidden {
 }
 
 @keyframes open-reserv {
-  0% { transform: translate(283px, -400px); }
-  100% { transform: translate(283px, 0) }
+  0% { transform: translate(0, -400px); }
+  100% { transform: translate(0, 0) }
 }
 
 .reserv-form {
