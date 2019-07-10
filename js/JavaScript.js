@@ -1,41 +1,27 @@
 var reservButton = document.querySelector(".search-button");
-var popup = document.querySelector(".booking-form");
-var dataArrive = popup.querySelector("[name=arrival]");
-var dataDeparture = popup.querySelector("[name=departure]");
-
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (!popup.classList.contains("visually-hidden")) {
-      evt.preventDefault();
-      popup.classList.remove("animation-reserv");
-      popup.classList.add("visually-hidden");
-      popup.classList.remove("incorrectly-put");
-    }
-  }
-});
+var popup = document.querySelector(".hotel-reservation");
+var arrival = popup.querySelector("[name=arrival]");
+var depart = popup.querySelector("[name=departure]");
 
 reservButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.toggle("visually-hidden");
-  if (!popup.classList.contains("visually-hidden")) {
+  popup.classList.toggle("hotel-reservation-none");
+  if (!popup.classList.contains("hotel-reservation-none")) {
     evt.preventDefault();
-    popup.classList.add("animation-reserv");
+    popup.classList.add("reserv-form");
   }
-  if (popup.classList.contains("visually-hidden")) {
+  if (popup.classList.contains("hotel-reservation-none")) {
     evt.preventDefault();
-    popup.classList.remove("animation-reserv");
-    popup.classList.remove("incorrectly-put");
-  }
+    popup.classList.remove("reserv-form");
+      }
 });
 
 popup.addEventListener("submit", function (evt) {
   evt.preventDefault();
-  if(!dataArrive.value||!dataDeparture.value) {
+  if(!arrival.value||!depart.value) {
     evt.preventDefault();
-    popup.classList.remove("incorrectly-put");
-    popup.offsetWidth = popup.offsetWidth;
-    popup.classList.add("incorrectly-put");
-  }
+        popup.offsetWidth = popup.offsetWidth;
+      }
   else {
     console.log("Отправить");
   }

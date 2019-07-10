@@ -331,8 +331,20 @@ input[type="radio"].visually-hidden {
 	display: none;
 }
 
+@keyframes open-reserv {
+  0% { transform: translate(283px, -400px); }
+  100% { transform: translate(283px, 0) }
+}
+
+.reserv-form {
+  display:block;
+  animation-name: open-reserv;
+  animation-duration: 0.9s;
+}
+
 .travel-date {
 	position: relative;
+	margin: 0;
 	margin-bottom: 29px;
 	display: flex;
 	justify-content: space-between;
